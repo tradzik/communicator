@@ -158,7 +158,7 @@ namespace COMmunicator
                 sw.WriteLine("[" + DateTime.Now + "]");
                 sw.WriteLine();
                 sw.WriteLine("raw value: " + t_value.Text);
-                sw.WriteLine("inch liquid: " + t_inch.Text);
+                sw.WriteLine("inch h2o: " + t_inch.Text);
                 sw.WriteLine("mm liquid: " + t_mm.Text);
                 sw.WriteLine();
                 sw.WriteLine("notes:");

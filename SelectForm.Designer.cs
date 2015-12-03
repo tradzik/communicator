@@ -149,7 +149,7 @@ namespace COMmunicator
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
-            this.Text = "Select COM port - COMmunicator // Tymon Radzik 2015";
+            this.Text = "Select COM port - COMmunicator ";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.SelectForm_Load);
             this.ResumeLayout(false);

@@ -54,6 +54,7 @@ namespace COMmunicator
             this.t_baud = new System.Windows.Forms.TextBox();
             this.b_conn = new System.Windows.Forms.Button();
             this.g_conntools = new System.Windows.Forms.GroupBox();
+            this.b_save = new System.Windows.Forms.Button();
             this.l_mm = new System.Windows.Forms.Label();
             this.l_inch = new System.Windows.Forms.Label();
             this.l_value = new System.Windows.Forms.Label();
@@ -66,7 +67,6 @@ namespace COMmunicator
             this.l_answer = new System.Windows.Forms.Label();
             this.b_sendsignal = new System.Windows.Forms.Button();
             this.l_connected = new System.Windows.Forms.Label();
-            this.b_save = new System.Windows.Forms.Button();
             this.g_conntools.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -156,14 +156,25 @@ namespace COMmunicator
             this.g_conntools.TabStop = false;
             this.g_conntools.Text = "Connection tools";
             // 
+            // b_save
+            // 
+            this.b_save.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.b_save.Location = new System.Drawing.Point(10, 66);
+            this.b_save.Name = "b_save";
+            this.b_save.Size = new System.Drawing.Size(167, 60);
+            this.b_save.TabIndex = 13;
+            this.b_save.Text = "Save results to file!";
+            this.b_save.UseVisualStyleBackColor = true;
+            this.b_save.Click += new System.EventHandler(this.b_save_Click);
+            // 
             // l_mm
             // 
             this.l_mm.AutoSize = true;
             this.l_mm.Location = new System.Drawing.Point(163, 266);
             this.l_mm.Name = "l_mm";
-            this.l_mm.Size = new System.Drawing.Size(57, 13);
+            this.l_mm.Size = new System.Drawing.Size(63, 13);
             this.l_mm.TabIndex = 12;
-            this.l_mm.Text = "H2O (mm):";
+            this.l_mm.Text = "Liquid (mm):";
             // 
             // l_inch
             // 
@@ -267,17 +278,6 @@ namespace COMmunicator
             this.l_connected.Text = "CONNECTION OPENED";
             this.l_connected.Visible = false;
             // 
-            // b_save
-            // 
-            this.b_save.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.b_save.Location = new System.Drawing.Point(10, 66);
-            this.b_save.Name = "b_save";
-            this.b_save.Size = new System.Drawing.Size(167, 60);
-            this.b_save.TabIndex = 13;
-            this.b_save.Text = "Save results to file!";
-            this.b_save.UseVisualStyleBackColor = true;
-            this.b_save.Click += new System.EventHandler(this.b_save_Click);
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -295,7 +295,7 @@ namespace COMmunicator
             this.Name = "MainForm";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "COMmunicator - tool to gather data from COM ports // Tymon Radzik 2015";
+            this.Text = "COMmunicator - tool to gather data from COM ports";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.g_conntools.ResumeLayout(false);
             this.g_conntools.PerformLayout();
